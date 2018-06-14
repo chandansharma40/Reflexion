@@ -15,7 +15,9 @@
 */
 package main
 
-import zmq "github.com/alecthomas/gozmq"
+import zmq "../.."
+//import "net/http"
+//import "html/template"
 
 func main() {
 	context, _ := zmq.NewContext()

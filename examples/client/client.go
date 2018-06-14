@@ -16,7 +16,10 @@
 package main
 
 import "fmt"
-import zmq "github.com/alecthomas/gozmq"
+import zmq "../.."
+import "time"
+//import "net/http"
+//import "html/template"
 
 func main() {
 	context, _ := zmq.NewContext()
@@ -24,10 +27,11 @@ func main() {
 	socket.Connect("tcp://127.0.0.1:5000")
 	socket.Connect("tcp://127.0.0.1:6000")
 
-	for i := 0; i < 10; i++ {
-		msg := fmt.Sprintf("msg %d", i)
+	for i := 0; i < 20; i++ {
+		msg := fmt.Sprintf("msg %d", i+1)
 		socket.Send([]byte(msg), 0)
 		println("Sending", msg)
 		socket.Recv(0)
+		time.Sleep(time.Second)
 	}
 }
