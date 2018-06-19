@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # _NOTE:_ These gozmq bindings are in maintenance mode. Only critical bugs will be fixed. Henceforth I would suggest using [@pebbe's](https://github.com/pebbe) actively maintained bindings for [zmq2](https://github.com/pebbe/zmq2), [zmq3](https://github.com/pebbe/zmq3) and [zmq4](https://github.com/pebbe/zmq4).
 
 ## Go (golang) Bindings for 0mq (zmq, zeromq)
@@ -1022,3 +1023,6 @@ func (self ZmqOsSocketType) ToRaw() C.SOCKET
 ```
 
 *(generated from .[godocdown](https://github.com/robertkrimen/godocdown).md with `godocdown github.com/alecthomas/gozmq > README.md`)*
+=======
+# Reflexion
+>>>>>>> daf30e5f32032b9687066803479b8f98e8b4d645
